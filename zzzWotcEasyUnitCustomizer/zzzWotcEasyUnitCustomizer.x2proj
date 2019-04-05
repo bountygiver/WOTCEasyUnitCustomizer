@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>9817dcab-01d0-4b66-81c2-ae1262514db0</Guid>
+    <Name>zzz Wotc Easy Unit Customizer</Name>
+    <Description>WOTC EUC that uses zzz in name to make sure it loads last</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>zzzWotcEasyUnitCustomizer</AssemblyName>
+    <RootNamespace>zzzWotcEasyUnitCustomizer</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\zzzWotcEasyUnitCustomizer\" />
+    <Folder Include="Src\zzzWotcEasyUnitCustomizer\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComContent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComSuperCustomizer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\zzzWotcEasyUnitCustomizer\Classes\X2DownloadableContentInfo_zzzWotcEasyUnitCustomizer.uc" />
+    <Content Include="Src\zzzWotcEasyUnitCustomizer\Classes\X2EPostGenerate_SuperUnitsPatcher.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\zzzWotcEasyUnitCustomizer\Classes\X2FinalTemplatePreValidation.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
